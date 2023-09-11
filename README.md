@@ -25,6 +25,7 @@ node app.js
 ```
 si todo fue bien la consola mostra
 Luego, puedes acceder a la documentación Swagger y probar los puntos finales en localhost:3000/api-docs.
+cross-origin resource sharing o CORS está configurado para funcionar con un front corriento en el puerto local 8080.
 
 ### Esquema de Cliente
 
