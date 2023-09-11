@@ -5,8 +5,11 @@ const authRoutes = require('./src/routes/authRoutes');
 const userRoutes = require('./src/routes/userRoutes');
 const swaggerUi = require('swagger-ui-express');
 const swaggerSpec = require('./swagger'); // Importa la configuración de Swagger
+const cors = require('cors');
 
 const app = express();
+
+app.use(cors({ origin: 'http://localhost:8080' }));
 
 // Configura middleware y rutas
 app.use(express.json());
